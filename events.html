@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>队伍 | HAMMER CUP</title>
+  <title>赛事中心 | HAMMER CUP</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -28,30 +28,38 @@
   </header>
 
   <section class="page-hero">
-    <h1>Teams</h1>
-    <p>参赛队伍名单将在报名审核完成后陆续公布。</p>
+    <h1>Events</h1>
+    <p>查看 Hammer Cup 平台已登记的所有赛事，包括公开赛、城市对抗赛、娱乐赛与邀请赛。</p>
   </section>
 
   <main class="page-container">
 
     <div class="section-heading">
-      <h2>参赛队伍</h2>
-      <span class="page-tag">持续更新</span>
+      <h2>赛事中心</h2>
+      <span class="page-tag">All Events</span>
     </div>
 
-    <div class="team-grid" data-teams-list></div>
+    <div class="event-filter-bar">
+      <span class="filter-pill active">全部</span>
+      <span class="filter-pill">报名开放中</span>
+      <span class="filter-pill">筹备中</span>
+      <span class="filter-pill">已结束</span>
+    </div>
+
+    <div class="platform-event-grid" data-events-list></div>
 
   </main>
 
   <footer class="footer">
     <div>
       <strong>HAMMER CUP</strong>
-      <p>Overwatch Community Tournament</p>
+      <p>Overwatch Community Tournament Platform</p>
     </div>
     <p>© 2026 Hammer Cup. All rights reserved.</p>
   </footer>
 
   <script src="data.js"></script>
   <script src="main.js"></script>
+</body>
 </body>
 </html>
