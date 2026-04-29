@@ -3,30 +3,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>赛事报名 - 守望先锋大锤杯</title>
+  <title>报名 | HAMMER CUP</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header class="navbar">
-    <div class="logo">守望先锋大锤杯</div>
-    <nav>
+    <div class="nav-left">
+      <img src="logo.png" alt="Hammer Cup Logo" class="nav-logo" />
+      <div class="brand-text">
+        <span class="brand-main">HAMMER CUP</span>
+        <span class="brand-sub">COMMUNITY TOURNAMENT</span>
+      </div>
+    </div>
+
+    <nav class="nav-menu">
       <a href="index.html">首页</a>
       <a href="schedule.html">赛程</a>
       <a href="teams.html">队伍</a>
       <a href="rules.html">规则</a>
-      <a href="register.html">报名</a>
+      <a href="register.html" class="active">报名</a>
+      <a href="news.html">公告</a>
     </nav>
+
+    <a href="register.html" class="nav-cta">立即报名</a>
   </header>
 
-  <section class="section">
-    <h1>赛事报名</h1>
-    <p>请队长填写报名表。报名信息提交后，赛事组委会将进行审核。</p>
-
-    <a class="btn primary" href="这里换成你的腾讯问卷链接" target="_blank">
-      打开报名表
-    </a>
+  <section class="page-hero register-hero">
+    <h1>Register Now</h1>
+    <p>队长请通过报名表提交队伍信息，赛事组委会将在审核后联系队伍。</p>
   </section>
+
+  <main class="page-container register-layout">
+
+    <section class="register-card">
+      <span class="page-tag">报名开放中</span>
+      <h2>Hammer Cup 2026 Stage 1</h2>
+      <p>
+        请确认队伍已阅读赛事规则，并由队长统一提交报名信息。
+        报名提交后，请保持联系方式畅通。
+      </p>
+
+      <div class="register-info">
+        <div>
+          <span>报名时间</span>
+          <strong>待公布</strong>
+        </div>
+        <div>
+          <span>比赛时间</span>
+          <strong>待公布</strong>
+        </div>
+        <div>
+          <span>参赛名额</span>
+          <strong>32 支队伍</strong>
+        </div>
+      </div>
+
+      <a class="btn btn-primary register-btn" href="这里换成你的报名表链接" target="_blank">
+        打开报名表
+      </a>
+    </section>
+
+    <aside class="register-side">
+      <h3>报名需要准备</h3>
+      <ul>
+        <li>队伍名称</li>
+        <li>队长联系方式</li>
+        <li>全部队员 ID</li>
+        <li>替补选手信息</li>
+        <li>是否接受赛事规则</li>
+      </ul>
+    </aside>
+
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>HAMMER CUP</strong>
+      <p>Overwatch Community Tournament</p>
+    </div>
+    <p>© 2026 Hammer Cup. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>

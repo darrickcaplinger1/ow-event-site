@@ -3,39 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>赛程 - 守望先锋大锤杯</title>
+  <title>赛程 | HAMMER CUP</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header class="navbar">
-    <div class="logo">守望先锋大锤杯</div>
-    <nav>
+    <div class="nav-left">
+      <img src="logo.png" alt="Hammer Cup Logo" class="nav-logo" />
+      <div class="brand-text">
+        <span class="brand-main">HAMMER CUP</span>
+        <span class="brand-sub">COMMUNITY TOURNAMENT</span>
+      </div>
+    </div>
+
+    <nav class="nav-menu">
       <a href="index.html">首页</a>
-      <a href="schedule.html">赛程</a>
+      <a href="schedule.html" class="active">赛程</a>
       <a href="teams.html">队伍</a>
       <a href="rules.html">规则</a>
       <a href="register.html">报名</a>
+      <a href="news.html">公告</a>
     </nav>
+
+    <a href="register.html" class="nav-cta">立即报名</a>
   </header>
 
-  <section class="section">
-    <h1>赛事赛程</h1>
-
-    <div class="card">
-      <h3>小组赛 A组</h3>
-      <p>5月10日 20:00</p>
-      <p>A队 vs B队</p>
-      <p>BO3</p>
-    </div>
-
-    <div class="card">
-      <h3>小组赛 B组</h3>
-      <p>5月11日 20:00</p>
-      <p>C队 vs D队</p>
-      <p>BO3</p>
-    </div>
+  <section class="page-hero">
+    <h1>Schedule</h1>
+    <p>查看 Hammer Cup 最新比赛安排、对阵信息与比赛状态。</p>
   </section>
+
+  <main class="page-container">
+
+    <div class="section-heading">
+      <h2>近期赛程</h2>
+      <span class="page-tag">2026 Stage 1</span>
+    </div>
+
+    <div class="schedule-list">
+
+      <div class="schedule-row">
+        <div class="schedule-date">
+          <strong>待公布</strong>
+          <span>20:00</span>
+        </div>
+
+        <div class="schedule-info">
+          <span class="status-tag small">即将开始</span>
+          <h3>Team A vs Team B</h3>
+          <p>小组赛 A组 · BO3</p>
+        </div>
+
+        <a href="#" class="mini-btn">详情</a>
+      </div>
+
+      <div class="schedule-row">
+        <div class="schedule-date">
+          <strong>待公布</strong>
+          <span>20:00</span>
+        </div>
+
+        <div class="schedule-info">
+          <span class="status-tag small gray">待定</span>
+          <h3>Team C vs Team D</h3>
+          <p>小组赛 B组 · BO3</p>
+        </div>
+
+        <a href="#" class="mini-btn">详情</a>
+      </div>
+
+      <div class="schedule-row">
+        <div class="schedule-date">
+          <strong>待公布</strong>
+          <span>20:00</span>
+        </div>
+
+        <div class="schedule-info">
+          <span class="status-tag small gray">待定</span>
+          <h3>Team E vs Team F</h3>
+          <p>小组赛 C组 · BO3</p>
+        </div>
+
+        <a href="#" class="mini-btn">详情</a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>HAMMER CUP</strong>
+      <p>Overwatch Community Tournament</p>
+    </div>
+    <p>© 2026 Hammer Cup. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>

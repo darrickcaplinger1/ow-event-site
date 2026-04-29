@@ -3,59 +3,185 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>守望先锋大锤杯</title>
+  <title>HAMMER CUP | 守望先锋社区赛事</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- 顶部导航栏 -->
   <header class="navbar">
-    <div class="logo">守望先锋大锤杯</div>
-    <nav>
-      <a href="index.html">首页</a>
+    <div class="nav-left">
+      <img src="Hammer Cup 2025 allmode.png" alt="Hammer Cup Logo" class="nav-logo" />
+      <div class="brand-text">
+        <span class="brand-main">HAMMER CUP</span>
+        <span class="brand-sub">COMMUNITY TOURNAMENT</span>
+      </div>
+    </div>
+
+    <nav class="nav-menu">
+      <a href="index.html" class="active">首页</a>
       <a href="schedule.html">赛程</a>
       <a href="teams.html">队伍</a>
       <a href="rules.html">规则</a>
       <a href="register.html">报名</a>
     </nav>
+
+    <a href="register.html" class="nav-cta">立即报名</a>
   </header>
 
+  <!-- Hero 主视觉 -->
   <section class="hero">
-    <h1>守望先锋大锤杯系列赛事</h1>
-    <p>Overwatch Hammer Cup Series</p>
-    <div class="buttons">
-      <a class="btn primary" href="register.html">立即报名</a>
-      <a class="btn" href="schedule.html">查看赛程</a>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="event-badge">2026 STAGE 1</div>
+
+      <h1>
+        HAMMER<br />
+        <span>CUP</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        守望先锋社区赛事平台
+      </p>
+
+      <p class="hero-desc">
+        为热爱竞技的玩家打造一个公平、稳定、具有观赏性的社区赛事舞台。
+      </p>
+
+      <div class="hero-actions">
+        <a href="register.html" class="btn btn-primary">立即报名</a>
+        <a href="schedule.html" class="btn btn-secondary">查看赛程</a>
+      </div>
+    </div>
+
+    <div class="hero-logo-wrap">
+      <img src="Hammer Cup 2025 allmode.png" alt="Hammer Cup Logo" class="hero-logo" />
     </div>
   </section>
 
-  <section class="cards">
-    <div class="card">
-      <h3>报名时间</h3>
-      <p>待公布</p>
+  <!-- 赛事信息卡片 -->
+  <section class="info-strip">
+    <div class="info-card">
+      <span>报名时间</span>
+      <strong>待公布</strong>
     </div>
-    <div class="card">
-      <h3>比赛时间</h3>
-      <p>待公布</p>
+    <div class="info-card">
+      <span>比赛时间</span>
+      <strong>待公布</strong>
     </div>
-    <div class="card">
-      <h3>参赛名额</h3>
-      <p>待公布</p>
+    <div class="info-card">
+      <span>参赛名额</span>
+      <strong>32 支队伍</strong>
     </div>
-    <div class="card">
-      <h3>赛制</h3>
-      <p>小组赛 + 淘汰赛</p>
+    <div class="info-card">
+      <span>比赛项目</span>
+      <strong>Overwatch 2</strong>
     </div>
   </section>
 
-  <section class="section">
-    <h2>赛事简介</h2>
-    <p>
-      守望先锋大锤杯系列赛事是面向守望先锋玩家的城市社区赛事，旨在为本地玩家、战队和社区组织者提供一个公平、稳定、具有观赏性的竞技舞台。
-    </p>
-  </section>
+  <!-- 主内容区 -->
+  <main class="main-layout">
 
-  <footer>
-    <p>© 2026 守望先锋大锤杯委员会</p>
+    <!-- 左侧赛事区 -->
+    <section class="tournament-section">
+      <div class="section-heading">
+        <h2>Tournament</h2>
+        <a href="schedule.html">More</a>
+      </div>
+
+      <div class="tournament-grid">
+        <article class="tournament-card">
+          <div class="card-banner">
+            <div class="status-tag">报名开放中</div>
+            <div class="banner-text">
+              <span>HAMMER CUP</span>
+              <h3>2026 Stage 1</h3>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <h3>Hammer Cup 2026 Stage 1</h3>
+            <p>守望先锋社区公开赛，面向所有符合规则的队伍开放报名。</p>
+
+            <div class="card-meta">
+              <span>赛事时间：待公布</span>
+              <span>赛制：小组赛 + 淘汰赛</span>
+            </div>
+
+            <a href="register.html" class="card-link">查看详情 / 报名</a>
+          </div>
+        </article>
+
+        <article class="tournament-card">
+          <div class="card-banner secondary">
+            <div class="status-tag gray">筹备中</div>
+            <div class="banner-text">
+              <span>COMMUNITY EVENT</span>
+              <h3>城市对抗赛</h3>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <h3>Hammer Cup 城市对抗赛</h3>
+            <p>以地区与城市为单位的社区娱乐竞技赛事，具体规则后续公布。</p>
+
+            <div class="card-meta">
+              <span>赛事时间：待公布</span>
+              <span>状态：筹备中</span>
+            </div>
+
+            <a href="schedule.html" class="card-link">查看赛事信息</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 右侧赛程区 -->
+    <aside class="schedule-panel">
+      <div class="panel-heading">
+        <h2>Schedule</h2>
+        <a href="schedule.html">More</a>
+      </div>
+
+      <div class="match-card">
+        <div class="match-stage">UPCOMING MATCH</div>
+        <div class="match-date">待公布</div>
+
+        <div class="match-teams">
+          <div class="team">
+            <div class="team-logo">A</div>
+            <span>Team A</span>
+          </div>
+
+          <div class="match-time">
+            <strong>20:00</strong>
+            <span>BO3</span>
+          </div>
+
+          <div class="team">
+            <div class="team-logo">B</div>
+            <span>Team B</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="notice-box">
+        <h3>赛事公告</h3>
+        <p>报名开启、规则更新与赛程调整将在本页面同步发布。</p>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- 底部 -->
+  <footer class="footer">
+    <div>
+      <strong>HAMMER CUP</strong>
+      <p>Overwatch Community Tournament</p>
+    </div>
+
+    <p>© 2026 Hammer Cup. All rights reserved.</p>
   </footer>
 
 </body>

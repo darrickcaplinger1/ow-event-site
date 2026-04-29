@@ -2,35 +2,86 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
-  <title>队伍名单 - 守望先锋大锤杯</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>队伍 | HAMMER CUP</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header class="navbar">
-    <div class="logo">守望先锋大锤杯</div>
-    <nav>
+    <div class="nav-left">
+      <img src="logo.png" alt="Hammer Cup Logo" class="nav-logo" />
+      <div class="brand-text">
+        <span class="brand-main">HAMMER CUP</span>
+        <span class="brand-sub">COMMUNITY TOURNAMENT</span>
+      </div>
+    </div>
+
+    <nav class="nav-menu">
       <a href="index.html">首页</a>
       <a href="schedule.html">赛程</a>
-      <a href="teams.html">队伍</a>
+      <a href="teams.html" class="active">队伍</a>
       <a href="rules.html">规则</a>
       <a href="register.html">报名</a>
+      <a href="news.html">公告</a>
     </nav>
+
+    <a href="register.html" class="nav-cta">立即报名</a>
   </header>
 
-  <section class="section">
-    <h1>参赛队伍</h1>
-
-    <div class="card">
-      <h3>A队</h3>
-      <p>队员名单：待公布</p>
-    </div>
-
-    <div class="card">
-      <h3>B队</h3>
-      <p>队员名单：待公布</p>
-    </div>
+  <section class="page-hero">
+    <h1>Teams</h1>
+    <p>参赛队伍名单将在报名审核完成后陆续公布。</p>
   </section>
+
+  <main class="page-container">
+
+    <div class="section-heading">
+      <h2>参赛队伍</h2>
+      <span class="page-tag">持续更新</span>
+    </div>
+
+    <div class="team-grid">
+
+      <article class="team-card">
+        <div class="team-badge">A</div>
+        <h3>Team A</h3>
+        <p>队伍信息待公布</p>
+        <span>状态：待审核</span>
+      </article>
+
+      <article class="team-card">
+        <div class="team-badge">B</div>
+        <h3>Team B</h3>
+        <p>队伍信息待公布</p>
+        <span>状态：待审核</span>
+      </article>
+
+      <article class="team-card">
+        <div class="team-badge">C</div>
+        <h3>Team C</h3>
+        <p>队伍信息待公布</p>
+        <span>状态：待审核</span>
+      </article>
+
+      <article class="team-card">
+        <div class="team-badge">D</div>
+        <h3>Team D</h3>
+        <p>队伍信息待公布</p>
+        <span>状态：待审核</span>
+      </article>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>HAMMER CUP</strong>
+      <p>Overwatch Community Tournament</p>
+    </div>
+    <p>© 2026 Hammer Cup. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
