@@ -8,7 +8,6 @@
 </head>
 <body>
 
-  <!-- 顶部导航栏 -->
   <header class="navbar">
     <div class="nav-left">
       <img src="Hammer Cup 2025 allmode.png" alt="Hammer Cup Logo" class="nav-logo" />
@@ -19,29 +18,17 @@
     </div>
 
     <nav class="nav-menu">
-      <a href="index.html">首页</a>
-      <a href="news.html">公告</a>
+      <a href="index.html" class="active">首页</a>
       <a href="events.html">赛事</a>
       <a href="schedule.html">赛程</a>
-      <a href="teams.html">队伍</a>
     </nav>
   </header>
 
-  <!-- Hero 主视觉 -->
   <section class="hero">
     <div class="hero-content">
-      <h1>
-        HAMMER<br />
-        <span>CUP</span>
-      </h1>
-
-      <p class="hero-subtitle">
-        守望先锋社区赛事平台
-      </p>
-
-      <p class="hero-desc">
-        为热爱竞技的玩家打造一个公平、稳定、具有观赏性的社区赛事舞台。
-      </p>
+      <h1>HAMMER<br /><span>CUP</span></h1>
+      <p class="hero-subtitle">守望先锋社区赛事平台</p>
+      <p class="hero-desc">为热爱竞技的玩家打造一个公平、稳定、具有观赏性的社区赛事舞台。</p>
 
       <div class="hero-actions">
         <a href="events.html" class="btn btn-primary">报名赛事</a>
@@ -54,57 +41,29 @@
     </div>
   </section>
 
-  <!-- 赛事信息卡片 -->
   <section class="info-strip platform-cards" data-home-stats></section>
 
-  <!-- 主内容区 -->
   <main class="main-layout">
-
-    <!-- 左侧赛事区 -->
     <section class="tournament-section">
       <div class="section-heading">
-        <h2>Tournament</h2>
+        <h2>赛事列表</h2>
         <a href="events.html">更多</a>
       </div>
-
       <div class="tournament-grid" data-home-events></div>
     </section>
 
-    <!-- 右侧赛程区 -->
     <aside class="schedule-panel">
       <div class="panel-heading">
-        <h2>Schedule</h2>
+        <h2>近期赛程</h2>
         <a href="schedule.html">更多</a>
       </div>
-
-      <div class="match-card">
-        <div class="match-stage">UPCOMING MATCH</div>
-        <div class="match-date">待公布</div>
-
-        <div class="match-teams">
-          <div class="team">
-            <div class="team-logo">A</div>
-            <span>Team A</span>
-          </div>
-
-          <div class="match-time">
-            <strong>20:00</strong>
-            <span>BO3</span>
-          </div>
-
-          <div class="team">
-            <div class="team-logo">B</div>
-            <span>Team B</span>
-          </div>
-        </div>
-      </div>
+      <div data-home-matches></div>
 
       <div class="notice-box">
         <h3>赛事公告</h3>
         <p>报名开启、规则更新与赛程调整将在本页面同步发布。</p>
       </div>
     </aside>
-
   </main>
 
   <footer class="footer">
@@ -118,7 +77,7 @@
 
     <div class="footer-social">
       <h4>关注我们</h4>
-      <a href="https://space.bilibili.com/3546747374668505" target="  _blank">Bilibili</a>
+      <a href="https://space.bilibili.com/3546747374668505" target="_blank" rel="noopener noreferrer">Bilibili</a>
     </div>
 
     <div class="footer-bottom">

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>北美守望先锋龙刃杯</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="participants.css" />
+</head>
+<body data-event-id="dragonblade-cup">
+
+  <!-- 顶部导航栏 -->
+    <header class="navbar">
+    <div class="nav-left">
+      <img src="Hammer Cup 2025 allmode.png" alt="Hammer Cup Logo" class="nav-logo" />
+      <div class="brand-text">
+        <span class="brand-main">守望先锋大锤杯</span>
+        <span class="brand-sub">Overwatch Hammer Cup Series</span>
+      </div>
+    </div>
+
+    <nav class="nav-menu">
+      <a href="index.html">首页</a>
+      <a href="events.html">赛事</a>
+      <a href="schedule.html">赛程</a>
+    </nav>
+  </header>
+
+  <section class="event-detail-hero">
+    <div class="event-detail-content">
+      <span class="page-tag open">正在报名中</span>
+      <h1>北美守望先锋<br>龙刃杯</h1>
+      <p>
+        风起北美，刀光再现。属于守望先锋玩家的对决，即将打响！谁能斩出那一刀“龙刃”，答案即将诞生！
+      </p>
+
+      <div class="hero-actions">
+        <button class="btn btn-primary" type="button" data-hero-tab="overview" data-scroll-target="register">
+          报名入口
+        </button>
+
+        <button class="btn btn-secondary" type="button" data-hero-tab="rules">
+          查看规则
+        </button>
+      </div>
+    </div>
+
+    <div class="event-detail-logo">
+      <img src="eventlogos/dragonblade-cup-logo.png" alt="Dragonblade Cup Logo" />
+    </div>
+  </section>
+
+  <section class="event-detail-info">
+    <div>
+      <span>报名时间</span>
+      <strong>2026/5/3 ~ 2026/5/8 12:00</strong>
+    </div>
+    <div>
+      <span>比赛时间</span>
+      <strong>2026/5/9 ~ 2026/5/17 23:00</strong>
+    </div>
+    <div>
+      <span>赛制</span>
+      <strong>双败淘汰赛</strong>
+    </div>
+    <div>
+      <span>赛事规模</span>
+      <strong>16队</strong>
+    </div>
+  </section>
+
+  <nav class="event-tabs" data-event-tabs>
+    <button class="event-tab active" type="button" data-tab-target="overview">赛事总览</button>
+    <button class="event-tab" type="button" data-tab-target="stages">赛程阶段</button>
+    <button class="event-tab" type="button" data-tab-target="matches">比赛列表</button>
+    <button class="event-tab" type="button" data-tab-target="participants">参赛队伍</button>
+    <button class="event-tab" type="button" data-tab-target="rules">规则书</button>
+  </nav>
+
+  <main class="event-detail-layout event-tabbed-layout">
+    <section class="event-detail-main">
+
+      <section id="stages" class="event-section bracket-section event-tab-panel" data-tab-panel="stages">
+        <div class="section-heading simple-bracket-heading">
+          <h2>淘汰赛对阵</h2>
+        </div>
+
+        <div class="bracket-scroll">
+          <div class="bracket-board" data-bracket-board></div>
+        </div>
+      </section>
+
+      <section id="overview" class="event-section event-tab-panel is-active" data-tab-panel="overview">
+        <h2>赛事介绍</h2>
+        <p>
+          龙刀杯北美守望先锋社区赛事正式开启报名。本次比赛面向美服玩家与社区战队，采用双败淘汰赛制，最多16支队伍参赛，每队可报名5至7名选手。赛事将于2026年5月9日至17日进行，冠军、亚军、季军及FMVP均设奖金奖励。
+        </p>
+        <p>
+          强者集结，刀锋出鞘，谁能在北美赛场登顶巅峰，赢下属于自己的荣耀时刻。
+        </p>
+      </section>
+
+      <section id="matches" class="event-section event-tab-panel" data-tab-panel="matches">
+        <h2>赛程安排</h2>
+        <div class="schedule-list compact" data-event-matches></div>
+      </section>
+
+      <section id="participants" class="event-section event-tab-panel" data-tab-panel="participants">
+        <h2>参赛队伍</h2>
+
+        <div class="mini-team-grid participant-team-grid" data-event-participants></div>
+      </section>
+
+      <section id="rules" class="event-section event-tab-panel" data-tab-panel="rules">
+        <h2>赛事规则</h2>
+
+        <a class="btn btn-primary" href="//docs.google.com/document/d/10VrEL3baf7pLLq9gRXR9YsYqZuP9xvIgRBvsxlpzJL8/edit?usp=sharing" aria-disabled="false">
+          点击查看规则书
+        </a>
+
+      </section>
+
+      <section id="prizepool" class="event-section event-tab-panel is-active" data-tab-panel="overview">
+        <h2>奖金池</h2>
+
+        <div class="prize-grid">
+          <div class="prize-card">
+            <span>冠军</span>
+            <strong>¥10000</strong>
+          </div>
+
+          <div class="prize-card">
+            <span>亚军</span>
+            <strong>¥5000</strong>
+          </div>
+
+          <div class="prize-card">
+            <span>季军</span>
+            <strong>¥2000</strong>
+          </div>
+
+          <div class="prize-card">
+            <span>FMVP</span>
+            <strong>¥2000</strong>
+          </div>
+        </div>
+      </section>
+      
+      <section id="register" class="event-section event-tab-panel is-active" data-tab-panel="overview">
+        <h2>报名入口</h2>
+        <p>
+          请队长确认队伍已阅读赛事规则后，通过报名表提交队伍信息。
+          报名提交后，请保持联系方式畅通。
+          赛事DC：https://discord.gg/uem5mnJd4
+        </p>
+
+        <a class="btn btn-primary" href="//wj.qq.com/s2/26526226/w0dc/" aria-disabled="false">
+          填写报名表
+        </a>
+      </section>
+
+    </section>
+
+  </main>
+
+    <footer class="footer">
+    <div class="footer-brand">
+      <img src="Hammer Cup 2025 allmode.png" alt="Hammer Cup Logo" />
+      <div>
+        <strong>HAMMER CUP</strong>
+        <p>守望先锋社区赛事平台</p>
+      </div>
+    </div>
+
+    <div class="footer-social">
+      <h4>关注我们</h4>
+      <a href="//space.bilibili.com/3546747374668505" target="_blank" rel="noopener noreferrer">Bilibili</a>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Hammer Cup. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+  <script src="bracket.js"></script>
+</body>
+</html>

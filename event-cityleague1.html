@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>百城之巅联赛第一赛季</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="participants.css" />
+</head>
+<body data-event-id="city-league-s1">
+
+  <!-- 顶部导航栏 -->
+    <header class="navbar">
+    <div class="nav-left">
+      <img src="Hammer Cup 2025 allmode.png" alt="Hammer Cup Logo" class="nav-logo" />
+      <div class="brand-text">
+        <span class="brand-main">守望先锋大锤杯</span>
+        <span class="brand-sub">Overwatch Hammer Cup Series</span>
+      </div>
+    </div>
+
+    <nav class="nav-menu">
+      <a href="index.html">首页</a>
+      <a href="events.html">赛事</a>
+      <a href="schedule.html">赛程</a>
+    </nav>
+  </header>
+
+  <section class="event-detail-hero">
+    <div class="event-detail-content">
+      <span class="page-tag ended">已结束</span>
+      <h1>百城之巅联赛<br>第一赛季</h1>
+      <p>
+        《守望先锋百城之巅联赛》第一赛季由 @超级白鸽_ @口巴口即 @FADE_ow 联合主办，@守望先锋大锤杯 承办。
+      </p>
+
+      <div class="hero-actions">
+        <a href="#schedule" class="btn btn-primary">赛事回顾</a>
+        <a href="#rules" class="btn btn-secondary">查看规则</a>
+      </div>
+    </div>
+
+    <div class="event-detail-logo">
+      <img src="City League.png" alt="City League Logo" />
+    </div>
+  </section>
+
+  <section class="event-detail-info">
+    <div>
+      <span>报名时间</span>
+      <strong>2025/12/16 ~ 2026/1/3 23:59</strong>
+    </div>
+    <div>
+      <span>比赛时间</span>
+      <strong>2026/1/5 ~ 2026/2/8 23:00</strong>
+    </div>
+    <div>
+      <span>赛制</span>
+      <strong>小组单循环<br>8强单败淘汰赛</strong>
+    </div>
+    <div>
+      <span>赛事规模</span>
+      <strong>512队</strong>
+    </div>
+  </section>
+
+  <nav class="event-tabs" data-event-tabs>
+    <button class="event-tab active" type="button" data-tab-target="overview">赛事总览</button>
+    <button class="event-tab" type="button" data-tab-target="announcement">赛事公告</button>
+    <button class="event-tab" type="button" data-tab-target="stages">赛程阶段</button>
+    <button class="event-tab" type="button" data-tab-target="matches">比赛列表</button>
+    <button class="event-tab" type="button" data-tab-target="participants">参赛队伍</button>
+    <button class="event-tab" type="button" data-tab-target="rules">规则书</button>
+  </nav>
+
+  <main class="event-detail-layout event-tabbed-layout">
+    <section class="event-detail-main">
+
+      <section id="stages" class="event-section bracket-section event-tab-panel" data-tab-panel="stages">
+        <div class="section-heading simple-bracket-heading">
+          <h2>淘汰赛对阵</h2>
+        </div>
+
+        <div class="bracket-scroll">
+          <div class="bracket-board" data-bracket-board></div>
+        </div>
+      </section>
+
+      <section id="overview" class="event-section event-tab-panel is-active" data-tab-panel="overview">
+        <h2>赛事介绍</h2>
+        <p>
+          《守望先锋百城之巅联赛》第一赛季由 @超级白鸽_ @口巴口即 @FADE_ow 联合主办，@守望先锋大锤杯 承办。
+          欢迎每一位玩家加入城市联赛，无论你是想感受比赛激情，获得实力提升。还是想剑指冠军，一战成名。
+          这里，都有你的舞台！
+        </p>
+        <p>
+          赛事将根据报名队伍数量确定最终赛制。预计采用瑞士轮或小组赛的结构，具体安排以正式公告为准。
+        </p>
+      </section>
+
+      <section id="matches" class="event-section event-tab-panel" data-tab-panel="matches">
+        <h2>赛程安排</h2>
+        <div class="schedule-list compact" data-event-matches></div>
+      </section>
+
+      <section id="participants" class="event-section event-tab-panel" data-tab-panel="participants">
+        <h2>参赛队伍</h2>
+
+        <div class="mini-team-grid participant-team-grid" data-event-participants></div>
+      </section>
+
+      <section id="rules" class="event-section event-tab-panel" data-tab-panel="rules">
+        <h2>赛事规则</h2>
+
+        <div class="rule-block">
+          <h3>一、报名与名单</h3>
+          <p>
+            队伍须由队长统一提交报名信息。报名信息应真实有效，选手 ID、联系方式与名单提交后，如需修改，须在规定时间内联系赛事组委会。
+          </p>
+        </div>
+
+        <div class="rule-block">
+          <h3>二、比赛赛制</h3>
+          <p>
+            赛事初步采用小组赛加淘汰赛形式。小组赛阶段通常采用 BO3，淘汰赛阶段采用 8 强单败赛制，八强赛与半决赛为 BO5，总决赛为 BO7，并设置季军赛。
+          </p>
+        </div>
+
+        <div class="rule-block">
+          <h3>三、公平竞赛</h3>
+          <p>
+            严禁外挂、代打、恶意利用 BUG、消极比赛、恶意辱骂等影响赛事公平与社区环境的行为。
+          </p>
+        </div>
+      </section>
+
+      <section id="rules" class="event-section event-tab-panel" data-tab-panel="announcement">
+        <h2>赛事公告</h2>
+
+        <div class="event-news-list" data-event-news-list>  
+
+          <article class="news-card compact-news">
+          <span class="news-date">2026.2.8</span>
+          <h3>【百城之巅】全国总冠军----温州p6r</h3>
+          <p>⚔️ 冠军加冕，温州的荣耀！ ⚔️<br>
+          恭喜温州p6r战队，以无可争议的实力，问鼎冠军！战术、操作、意志，我们就是顶峰！下一站，迎接更多挑战！</p>
+          </article>
+
+          <article class="news-card compact-news">
+          <span class="news-date">2026.2.4</span>
+          <h3>全国八强赛公布！</h3>
+          <p>2月6日六点钟准时打响第一场比赛！全国冠军将会在这周末内揭晓！<br><br>
+          届时也有以下三位解说嘉宾陪伴大家共度美妙比赛夜：<br>
+          @超级白鸽_​ @解说小逗​ @o0阳小龙0o​<br><br>
+          点击下方直播预约！可以参与由@沙尔曼_ow​ 赞助的战令抽奖！<br><br>
+          原定解说嘉宾LIGE因为部分原因无法到场，希望大家谅解！</p>
+          </article>
+
+          <article class="news-card compact-news">
+            <span class="news-date">2026.1.28</span>
+            <h3>【百城之巅】全国赛赛程与解说嘉宾公布！</h3>
+            <p>本周周末（1月30日-2月1日）每晚六点将打响全国赛小组赛阶段！<br>
+            下周周末（2月6日-2月8日）每晚六点将打响全国赛淘汰赛阶段！<br><br>
+            四大赛区，三百多支队伍，两千多名报名选手，角逐整整一月诞生而出的十六支全国赛战队已经蓄势待发，随时准备打响新一轮战斗！<br><br>
+            全国赛期间也将为大家邀请到以下四位解说嘉宾共度美妙比赛夜！<br>
+            @超级白鸽_​ @陈昭宇Sio​ @o0阳小龙0o​ @OA-LiGe​<br>
+            并且将在直播间为大家抽取KOOK、守望先锋虚拟道具，雷柏鼠标、鼠标垫等产品！<br>
+            大家敬请期待~</p>
+          </article>
+
+          <article class="news-card compact-news collapsible-news">
+            <span class="news-date">2026.1.10</span>
+            <h3>处罚公告4</h3>
+
+            <div class="news-content">
+              <p>关于对参赛选手【宝宝#59288】及所属队伍【连云港沧澜队】处罚决定的公告<br><br>
+              致全体《百城之巅》参赛选手与关注者：<br><br>
+              为捍卫赛事绝对公平的竞技原则，维护所有参赛者的共同权益，赛事组现就一起已确认的严重违规行为及处罚决定，向全体公示如下：<br><br>
+
+              一、违规事实确认与处罚决定<br>
+              经赛事组核查，参赛选手【宝宝#59288】（昵称：橙子）存在明确违规行为。赛事组已获取由官方发出的正式处理邮件，其中明确指出：<br>
+              “经过审查，我们发现该账号在游戏过程中开启或使用了未经授权的第三方程序……此行为已经违反《客户端/服务器使用管理规则》。处理措施：账号永久冻结。”<br>
+              该邮件内容构成对作弊行为的官方正式认定，证据确凿。<br><br>
+
+              据此，依据《百城之巅赛事规则书》中6.3作弊举报细则，赛事组委会作出最终裁定：<br><br>
+              取消选手【宝宝#59288】（橙子）的参赛资格，永久禁止其参与《百城之巅》系列赛事，直至该账号解封为止。<br><br>
+              对该选手所属的整支队伍【连云港沧澜队】，执行禁赛处罚。禁赛期将持续至该选手被永久冻结的账号获得官方解封为止。在禁赛期间，该队伍不得以任何形式参加本届赛事后续所有赛程。<br><br>
+
+              二、关于“全队禁赛”处罚依据的说明<br>
+              本次处罚与规则书条款完全一致，其核心依据在于：违规性质的严重性与证据的确定性。<br><br>
+              性质严重：使用外挂作弊，是破坏竞技游戏根基、践踏所有参赛者努力的最恶劣行为，没有酌情余地。<br><br>
+              证据确凿：本次判罚并非基于单方面举报或存疑状态，而是获得了游戏运营方（网易雷火）的官方最终裁定（永久冻结），其结论具备最高权威性，完全满足规则中“被证实”的前提。<br>
+              赛事规则中“全队禁赛”的条款，正是为了严惩此类经过确认的、严重破坏公平的恶意行为，以儆效尤，从重维护赛事环境的纯净。<br><br>
+
+              我们深信，公正与诚信是电竞精神的基石。感谢所有恪守规则的参赛队伍共同维护这片来之不易的竞技环境。让我们携手，让比赛结果完全取决于实力与智慧。<br><br>
+
+              《百城之巅》赛事组委会</p>
+            </div>
+
+            <button class="news-toggle-btn" type="button" data-toggle-single-news>
+              展开全文
+            </button>
+          </article>
+
+          <article class="news-card compact-news collapsible-news">
+            <span class="news-date">2026.1.10</span>
+            <h3>处理公告3</h3>
+
+            <div class="news-content">
+              <p>关于对【成都耗儿鱼队】选手确认作弊及全队禁赛的最终处罚公告<br><br>
+              致全体《百城之巅》参赛选手与关注者：<br>
+              天网恢恢，疏而不漏。任何意图玷污竞技公平、践踏所有参赛者努力的行为，无论其如何隐匿与叫嚣，终将在事实与规则面前无所遁形，并招致最严厉的制裁。赛事组委会现就此前已启动调查的严重作弊事件，公布最终裁定。<br><br>
+              一、 最终事实确认与性质定性<br>
+              针对涉嫌严重违规的参赛队伍【成都耗儿鱼队】及选手 【總之就係非常可愛#5344】 ，赛事组已收到游戏官方（网易雷火）出具的最终邮件审查结论。官方邮件明确指出：<br>
+              “经过审查，我们发现该账号在游戏过程中开启或使用了未经授权的第三方程序（外挂）……此行为已违反用户协议。处理措施：账号永久冻结。”<br>
+              此邮件是对该选手作弊行为的最终且权威的认定。<br>
+              尤为恶劣的是，在事件调查期间，有确凿证据表明，该选手不仅实施作弊，更在外挂相关社群中公然发表 “我杀完了都不知道我开没开”、 “你就看这些脑残有几个看得懂外挂的” 等嚣张言论。此举已非简单的违规，更是对竞技精神的公然蔑视、对全体参赛者及赛事组织方的极端挑衅。<br><br>
+              二、 事实说明与最终处罚决定<br>
+              在此，赛事组需向全体说明一个关键事实：尽管该队存在选手使用外挂，但其队伍在赛事第一轮比赛中已被对手零封击败。因此，其作弊行为并未能改变比赛进程。<br>
+              然而，作弊事实的成立与否，与作弊行为是否成功影响了赛果无关。 基于上述经官方确认的作弊事实及其挑衅言论的恶劣情节，依据《百城之巅赛事规则书》中6.3作弊举报细则，赛事组委会作出最终不可更改的处罚如下：<br>
+              对选手【總之就係非常可愛#5344】的处罚：永久取消其《百城之巅》系列赛事参赛资格，列入赛事黑名单。<br>
+              对【成都耗儿鱼队】的处罚：即日起，取消该队伍本届赛事全部参赛资格，并予以全队禁赛。禁赛期将持续至该名被永久冻结的作弊选手账号获得官方解封之日为止。禁赛期间，该队伍不得以任何形式（包括更换队员）参加本赛事。<br><br>
+              三、 赛事组严正声明与警示<br>
+              “结果未遂”不等于“行为无罪”：本次事件再次明确传递一个铁则——赛事对作弊的打击，针对的是“作弊行为”本身，而非仅看其是否“获益”。任何启动外挂的行为，无论输赢，一经查实，均构成最严重的违规。<br>
+              以此为鉴，望所有选手恪守诚信。实力与尊严，只在公平的赛场上取得。<br><br>
+              《百城之巅》赛事组委会</p>
+            </div>
+            <button class="news-toggle-btn" type="button" data-toggle-single-news>
+              展开全文
+            </button>
+          </article>
+
+          <article class="news-card compact-news collapsible-news">
+            <span class="news-date">2026.1.7</span>
+            <h3>处罚公告2</h3>
+
+            <div class="news-content">
+              <p>关于对表演赛选手【愿祖国永远昌盛#5632】及同队表演赛未上场选手【Yip1#​5160】及所属队伍处罚决定的公告<br><br>
+              致全体《百城之巅》参赛选手与关注者：<br><br>
+              为捍卫赛事绝对公平的竞技原则，维护所有参赛者的共同权益，赛事组现就一起已确认的严重违规行为及处罚决定，向全体公示如下：<br><br>
+
+              一、违规事实确认与处罚决定<br>
+              经赛事组核查，表演赛参赛选手【愿祖国永远昌盛#5632】（昵称：k3rma）及同队表演赛未上场选手【Yip1#​5160】（昵称：神枪手）存在明确违规行为。赛事组已获取由官方发出的正式处理邮件，其中明确指出：<br>
+              “经过审查，我们发现该账号在游戏过程中开启或使用了未经授权的第三方程序……此行为已经违反《客户端/服务器使用管理规则》。处理措施：账号永久冻结。”<br>
+              该邮件内容构成对作弊行为的官方正式认定，证据确凿。<br><br>
+
+              据此，依据《百城之巅赛事规则书》中6.3作弊举报细则，赛事组委会作出最终裁定：<br><br>
+              取消选手【愿祖国永远昌盛#5632】（k3rma）、【Yip1#​5160】（神枪手）的参赛资格，永久禁止其参与《百城之巅》系列赛事，直至相关账号解封为止。<br><br>
+              对这两位选手所属的整支队伍【温州企鹅队】，执行禁赛处罚。禁赛期将持续至相关被永久冻结的账号获得官方解封为止。在禁赛期间，该队伍不得以任何形式参加本届赛事后续所有赛程。<br><br>
+
+              二、关于“全队禁赛”处罚依据的说明<br>
+              本次处罚与规则书条款完全一致，其核心依据在于：违规性质的严重性与证据的确定性。<br><br>
+              性质严重：使用外挂作弊，是破坏竞技游戏根基、践踏所有参赛者努力的最恶劣行为，没有酌情余地。<br><br>
+              证据确凿：本次判罚并非基于单方面举报或存疑状态，而是获得了游戏运营方（网易雷火）的官方最终裁定（永久冻结），其结论具备最高权威性，完全满足规则中“被证实”的前提。<br>
+              赛事规则中“全队禁赛”的条款，正是为了严惩此类经过确认的、严重破坏公平的恶意行为，以儆效尤，从重维护赛事环境的纯净。<br><br>
+
+              其中【愿祖国永远昌盛#5632】（k3rma）选手账号被禁用事宜，赛事组实际已于1月6日下午收到通知并作出处理。因在本公告发布前一直未能获取邮件内容，故公告发布有所延后。现证据确凿，特此公告说明。<br><br>
+
+              《百城之巅》赛事组委会</p>
+            </div>
+
+            <button class="news-toggle-btn" type="button" data-toggle-single-news>
+              展开全文
+            </button>
+          </article>
+
+          <article class="news-card compact-news collapsible-news">
+            <span class="news-date">2026.1.7</span>
+            <h3>处罚公告</h3>
+
+            <div class="news-content">
+              <p>关于对表演赛选手【Yet1#5949】及所属队伍处罚决定的公告<br><br>
+              致全体《百城之巅》参赛选手与关注者：<br><br>
+              为捍卫赛事绝对公平的竞技原则，维护所有参赛者的共同权益，赛事组现就一起已确认的严重违规行为及处罚决定，向全体公示如下：<br><br>
+
+              一、违规事实确认与处罚决定<br>
+              经赛事组核查并收到多方举报，表演赛参赛选手【Yet1#5949】（昵称：MOONLIGHT）存在明确违规行为。赛事组已获取由官方发出的正式处理邮件，其中明确指出：<br>
+              “经过审查，我们发现该账号在游戏过程中开启或使用了未经授权的第三方程序……此行为已经违反《客户端/服务器使用管理规则》。处理措施：账号永久冻结。”<br>
+              该邮件内容构成对作弊行为的官方正式认定，证据确凿。<br><br>
+
+              据此，依据《百城之巅赛事规则书》中6.3作弊举报细则，赛事组委会作出最终裁定：<br><br>
+              取消选手【Yet1#5949】（MOONLIGHT）的参赛资格，永久禁止其参与《百城之巅》系列赛事，直至该账号解封为止。<br><br>
+              对该选手所属的整支队伍，执行禁赛处罚。禁赛期将持续至该选手被永久冻结的账号获得官方解封为止。在禁赛期间，该队伍不得以任何形式参加本届赛事后续所有赛程。<br><br>
+
+              二、关于“全队禁赛”处罚依据的说明<br>
+              本次处罚与规则书条款完全一致，其核心依据在于：违规性质的严重性与证据的确定性。<br><br>
+              性质严重：使用外挂作弊，是破坏竞技游戏根基、践踏所有参赛者努力的最恶劣行为，没有酌情余地。<br><br>
+              证据确凿：本次判罚并非基于单方面举报或存疑状态，而是获得了游戏运营方（网易暴雪）的官方最终裁定（永久冻结），其结论具备最高权威性。结合赛事组收到的多方指证，已形成完整、无可辩驳的证据链，完全满足规则中“被证实”的前提。<br>
+              赛事规则中“全队禁赛”的条款，正是为了严惩此类经过确认的、严重破坏公平的恶意行为，以儆效尤，从重维护赛事环境的纯净。<br><br>
+
+              三、对全体参赛队伍的郑重提醒<br>
+              严格审核对手名单：在每场比赛开始前，请大家务必核对对方出场队员的完整战网ID（含数字编号），确保其与赛事组公示的《队伍大名单》完全一致。任何不符，应立即提出。<br><br>
+              零容忍态度：赛事组对作弊行为持零容忍态度。我们鼓励并保护任何实名或匿名的、基于事实的合理举报，并将穷尽一切可行渠道进行核查。一旦查实，必将依据规则顶格处理，绝不姑息。<br><br>
+
+              《百城之巅》赛事组委会</p>
+            </div>
+
+            <button class="news-toggle-btn" type="button" data-toggle-single-news>
+              展开全文
+            </button>
+          </article>
+
+          <article class="news-card compact-news">
+            <span class="news-date">2025.12.17</span>
+            <h3>奖金、奖项变动通知</h3>
+            <p>在比赛宣传开始的三天内，我们收到了多方奖金、奖品方面的大力支持。<br>
+            赞助人有：网易雷火、Milk Tea战队、时澪Tilinme 、沐涵<br>
+            他们的支持让整个赛事焕发活力，奖金大幅度增加！<br>
+            冠军奖金上调5500元！<br>
+            亚、季、殿军奖金各上调1000元！<br>
+            新增明日之星、女性选手、参与奖，具体奖项情况请看海报。<br>
+            让我们比赛见！<br>
+            再次感谢赞助支持@守望先锋​ @TeamMilkTea​ @时澪Tilinme​</p>
+          </article>
+
+          <article class="news-card compact-news">
+            <span class="news-date">2025.12.16</span>
+            <h3>感谢@TeamMilkTea​ 为百城之巅再添一奖！</h3>
+            <p>他们将为全体参赛选手送出十张Milk Tea鼠标垫，报名参加即可获得抽奖资格！<br>
+            具体抽奖方式请进入官方群内获知：153188948 <br>
+            感谢Milk Tea的大力支持，在此鸣谢！<br>
+            让我们一起铸造，下一片星辰。</p>
+          </article>
+
+          <article class="news-card compact-news">
+            <span class="news-date">2025.12.15</span>
+            <h3>感谢网易雷火对比赛的大力支持</h3>
+            <p>网易雷火为社区赛事注入10000元+直播时游戏内虚拟道具抽取<br>
+            他们的这笔资金将全额报销超级白鸽、口巴口即、FADE三人原本为爱发电注入的赛事奖金，为民间社区赛事大大增加动力。<br>
+            谢谢官方对社区赛事的支持！<br>
+            让我们一起铸造，下一片星辰。</p>
+          </article>
+
+          <article class="news-card compact-news">
+            <span class="news-date">2025.12.15</span>
+            <h3>感谢沐涵为赛事注入燃料，8000元！</h3>
+            <p>按照赞助人要求，其中4000元计入新增奖项：明日之星（20岁以下表现优异的小将可以申请获得，具体奖励获得方式报名群内公布）<br>
+            3500将计入冠军奖金,500用作赛事宣发。<br>
+            也就是说我们现在总奖池来到3w元，冠军奖金8500元！<br>
+            希望能有更多的人参加比赛，也希望能有更多的后起之秀，在这场比赛内被大家认识。<br>
+            守望先锋永远离不开这份热爱，非常感谢大家愿意为了CNOW付出发电，在此鸣谢！
+            （百城之巅S1赛季至此不再接受任何个人形式的赞助，谢谢大家！）</p>
+          </article>
+
+          <article class="news-card compact-news">
+            <span class="news-date">2025.12.14</span>
+            <h3>感谢@时澪Tilinme​ 为赛事注入重要燃料，10000元！</h3>
+            <p>其中9000将计入总奖金池,1000用作赛事宣发。<br>
+            计入总奖池的9000元将分作两部分使用<br>
+            1.第一到第四名每队将提高1000元的奖金金额，共计4000元<br>
+            2.开设新奖项，在比赛内表现优秀的20岁以下小将/女性选手可以平分5000元奖金，具体获奖指标流程待后续公布。<br>
+            非常感谢大家愿意为了CNOW付出发电，在此鸣谢！</p>
+          </article>
+
+        </div>
+
+        <button class="view-all-matches" type="button" data-toggle-event-news>
+          查看所有公告
+        </button>
+      </section>
+
+      
+      <section id="register" class="event-section event-tab-panel is-active" data-tab-panel="overview">
+        <h2>报名入口</h2>
+        <p>
+          请队长确认队伍已阅读赛事规则后，通过报名表提交队伍信息。
+          报名提交后，请保持联系方式畅通。
+        </p>
+
+        <a class="btn btn-primary" href="#" aria-disabled="true">
+          报名已结束
+        </a>
+      </section>
+
+    </section>
+
+  </main>
+
+    <footer class="footer">
+    <div class="footer-brand">
+      <img src="Hammer Cup 2025 allmode.png" alt="Hammer Cup Logo" />
+      <div>
+        <strong>HAMMER CUP</strong>
+        <p>守望先锋社区赛事平台</p>
+      </div>
+    </div>
+
+    <div class="footer-social">
+      <h4>关注我们</h4>
+      <a href="https://space.bilibili.com/3546747374668505" target="_blank" rel="noopener noreferrer">Bilibili</a>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Hammer Cup. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+  <script src="bracket.js"></script>
+</body>
+</html>

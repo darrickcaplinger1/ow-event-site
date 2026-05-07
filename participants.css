@@ -1,0 +1,100 @@
+/* 参赛队伍卡片：紧凑官网版，无职责上色 */
+.participant-team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.participant-team-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: auto;
+  padding: 16px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.05);
+}
+
+.participant-team-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  text-align: center;
+}
+
+/* 保留原来的 LOGO / 队徽格式 */
+/* 限制参赛队伍 logo 尺寸，防止炸出 card */
+.participant-team-logo-wrap {
+  width: 72px !important;
+  height: 72px !important;
+  margin: 0 auto 8px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.participant-team-logo {
+  width: auto;
+  height: auto;
+  max-width: 90px;
+  max-height: 64px;
+  object-fit: contain;
+}
+
+.participant-team-card h3 {
+  margin: 0;
+  color: #111827;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.participant-members-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* 每个 player 一行，压扁、紧凑 */
+.participant-member-chip {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  align-items: center;
+  gap: 10px;
+  min-height: 30px;
+  padding: 5px 8px;
+  border: 1px solid rgba(15, 23, 42, 0.09);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.participant-member-role {
+  display: block;
+  color: #6b7280;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.participant-member-id {
+  color: #111827;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.25;
+  text-align: left;
+  word-break: break-all;
+}
+
+.participant-member-chip.is-empty {
+  opacity: 0.6;
+}
